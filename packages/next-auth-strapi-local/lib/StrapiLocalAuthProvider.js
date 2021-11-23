@@ -1,4 +1,10 @@
-import CredentialsProvider from 'next-auth/providers/credentials.js';
+import CredentialsProviderModule from 'next-auth/providers/credentials';
+
+let CredentialsProvider = CredentialsProviderModule
+
+if (typeof CredentialsProviderModule.default === 'function') {
+  CredentialsProvider = CredentialsProviderModule.default
+}
 
 export default function StrapiLocalAuthProvider(config, handler) {
   return CredentialsProvider({
