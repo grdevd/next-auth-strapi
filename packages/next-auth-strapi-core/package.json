@@ -27,5 +27,11 @@
   },
   "bugs": {
     "url": "https://github.com/grdevd/next-auth-strapi/issues"
+  },
+  "dependencies": {
+    "prop-types": "*"
+  },
+  "peerDependencies": {
+    "next-auth": "^4.0.0"
   }
 }

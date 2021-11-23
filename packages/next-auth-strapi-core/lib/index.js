@@ -7,3 +7,6 @@ export {
 export {
   default as createSignInCallback
 } from './handleSignInCallbackAsync'
+export {
+  default as AuthSuspense
+} from './components/AuthSuspense'
