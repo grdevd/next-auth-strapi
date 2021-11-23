@@ -1,4 +1,4 @@
-import CredentialsProvider from 'next-auth/providers/credentials';
+import CredentialsProvider from 'next-auth/providers/credentials.js';
 
 export default function StrapiLocalAuthProvider(config, handler) {
   return CredentialsProvider({
@@ -38,7 +38,10 @@ export default function StrapiLocalAuthProvider(config, handler) {
 
         return null;
       } catch (error) {
-        handler({ error })
+        if (handler) {
+          handler({ error })
+        }
+
         return null;
       }
     }
