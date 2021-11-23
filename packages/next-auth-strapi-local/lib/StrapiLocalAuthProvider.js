@@ -1,6 +1,6 @@
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-export function StrapiLocalAuthProvider(config, handler) {
+export default function StrapiLocalAuthProvider(config, handler) {
   return CredentialsProvider({
     name: 'StrapiLocalAuth',
     credentials: {
