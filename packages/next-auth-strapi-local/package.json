@@ -1,6 +1,6 @@
 {
   "name": "@grdevdpkg/next-auth-strapi-local",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "Gregor Daskaloff",
   "homepage": "https://github.com/grdevd/next-auth-strapi#readme",
@@ -29,6 +29,6 @@
     "url": "https://github.com/grdevd/next-auth-strapi/issues"
   },
   "dependencies": {
-    "@grdevdpkg/next-auth-strapi-core": "^0.0.1"
+    "@grdevdpkg/next-auth-strapi-core": "^0.0.2"
   }
 }
