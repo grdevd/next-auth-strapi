@@ -21,7 +21,7 @@ export default function StrapiLocalAuthProvider(config, handler) {
     },
     async authorize(credentials) {
       try {
-        const response = await fetch(`${config.api.endpoint}/auth/local`, {
+        const response = await fetch(`${config.api.endpoint}/api/auth/local`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
